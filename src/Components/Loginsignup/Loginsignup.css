@@ -1,0 +1,161 @@
+/* Base Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+body {
+  background: linear-gradient(135deg, #00b4d8, #0077b6);
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+/* Main Container */
+.container {
+  background-color: #ffffff;
+  width: 100%;
+  width: 420px;
+  padding: 40px 30px;
+  border-radius: 20px;
+box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  transition: all 0.3s ease;
+}
+
+/* Header Section */
+.header {
+  text-align: center;
+}
+
+.text {
+  color: #0077b6;
+  font-size: 32px;
+  font-weight: bold;
+}
+
+.underline {
+  width: 50px;
+  height: 4px;
+  background: #0077b6;
+  border-radius: 5px;
+  margin: 10px auto 0;
+}
+
+/* Input Fields */
+.inputs {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.input {
+  background: #f1f1f1;
+  border-radius: 10px;
+  padding: 12px 16px;
+  display: flex;
+  align-items: center;
+  transition: box-shadow 0.2s ease;
+}
+
+.input:hover {
+box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 238, 255, 0.22) 0px 10px 10px;  display: flex;
+}
+
+.input img {
+  width: 22px;
+  height: 22px;
+  margin-right: 10px;
+}
+
+.input input {
+  flex: 1;
+  background: transparent;
+  border: none;
+  outline: none;
+  font-size: 16px;
+  color: #333;
+}
+
+/* Forgot Password */
+.forgot_password {
+  text-align: right;
+  font-size: 14px;
+  color: #666;
+}
+
+.forgot_password span {
+  color: #0077b6;
+  cursor: pointer;
+  font-weight: 500;
+}
+
+/* Submit Buttons */
+.submit_container {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  margin-top: 20px;
+}
+
+.submit {
+  background: #0077b6;
+  color: white;
+  padding: 14px;
+  text-align: center;
+  border-radius: 30px;
+  font-weight: bold;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.submit:hover {
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px; 
+
+}
+
+/* Responsive Tweaks */
+@media (max-width: 480px) {
+  .container {
+    padding: 30px 20px;
+    border-radius: 16px;
+  }
+
+  .text {
+    font-size: 28px;
+  }
+
+  .input {
+    padding: 10px 14px;
+  }
+
+  .submit {
+    font-size: 15px;
+    padding: 12px;
+  }
+}
+.gray{
+    background: #eaeaea;
+    color: #676767;
+}
+.submit_button {
+  background: #0077b6;
+  color: white;
+  padding: 14px;
+  text-align: center;
+  border-radius: 30px;
+  font-weight: bold;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.submit_button:hover {
+  background-color: #005f8d;
+}
